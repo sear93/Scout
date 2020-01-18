@@ -294,7 +294,7 @@
     color: #ffffff;
     padding: 2px 5px;
     margin-bottom: 4px;
-    margin-right: 100%;
+    margin-right: 50%;
   }
 }
 
@@ -1082,7 +1082,7 @@ button {
 
 @media screen and (max-width: 500px) {
   .energy__text.m {
-    margin: 0 16px 45px 16px;
+    padding: 0 16px 45px 16px;
   }
 }
 
