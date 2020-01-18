@@ -452,6 +452,10 @@
   }
 }
 
+.endurance__text.m {
+  display: none;
+}
+
 @media screen and (max-width: 500px) {
   .endurance__text.m {
     display: block;
