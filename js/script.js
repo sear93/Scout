@@ -5,7 +5,7 @@ $(document).ready(function () {
     });
 
    $(".news-container").owlCarousel({
-     loop: true,
+     loop: false,
      margin: 20,
      responsiveClass: true,
      autoplay: true,
@@ -24,5 +24,13 @@ $(document).ready(function () {
          nav: true
        }
      }
+   });
+
+   $(".slider").owlCarousel({
+     loop: true,
+     autoplay: true,
+     autoplayTimeout: 10000,
+     items: 1,
+     nav: true
    });
 });

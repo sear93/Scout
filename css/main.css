@@ -193,6 +193,13 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #FFFFFF;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  .header-nav__item:last-child:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 }
 
@@ -228,13 +235,13 @@
 @media screen and (max-width: 820px) {
   .main .scout {
     min-height: auto;
-    margin: 0 25px 120px 25px;
+    margin: 0 16px 120px 16px;
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 500px) {
   .main .scout {
-    margin: 0 16px;
+    margin: 0 16px 30px 16px;
   }
 }
 
@@ -313,6 +320,52 @@
   }
 }
 
+.main .scout .btn {
+  background: #999B30;
+  padding: 24px 20px;
+  margin: auto auto 37px auto;
+  -webkit-box-shadow: 0px 20px 50px rgba(153, 155, 48, 0.4);
+  box-shadow: 0px 20px 50px rgba(153, 155, 48, 0.4);
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: none;
+  font-family: Gotham Pro, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+  left: 90px;
+  bottom: 12px;
+  text-decoration: none;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.main .scout .btn:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 1160px) {
+  .main .scout .btn {
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main .scout .btn {
+    position: static;
+    display: block;
+    margin: 20px auto 37px auto;
+    text-align: center;
+  }
+}
+
 .endurance .container {
   padding: 0 100px 120px 100px;
 }
@@ -329,6 +382,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .endurance__img {
+    margin: 0 0 30px 0;
+  }
+}
+
 .endurance-content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -339,6 +398,12 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 0 40px 0;
+}
+
+@media screen and (max-width: 500px) {
+  .endurance-content {
+    margin: 0px 0 24px 0;
+  }
 }
 
 .endurance__title {
@@ -363,6 +428,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .endurance__text {
+    display: none;
+  }
+}
+
 .endurance__text p {
   font-style: normal;
   font-weight: normal;
@@ -378,6 +449,13 @@
   .endurance__text p {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .endurance__text.m {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -431,9 +509,13 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .energy-content {
     position: static;
+    padding: 0 16px;
+    max-width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 }
 
@@ -446,6 +528,12 @@
 @media screen and (max-width: 820px) {
   .energy__title {
     margin: 0 0 15px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .energy__title {
+    margin: 0 0 5px 0;
   }
 }
 
@@ -477,6 +565,12 @@
   .energy__text p {
     font-size: 18px;
     line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .energy__text p {
+    display: none;
   }
 }
 
@@ -533,6 +627,16 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .move-content {
+    position: static;
+    padding: 0 16px;
+    max-width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
 .test-slider {
   position: relative;
   background: #EFF3EF;
@@ -546,6 +650,11 @@
   .test-slider {
     margin: 0 50px 170px 50px;
   }
+}
+
+.test-slider .container {
+  max-width: 50%;
+  margin-left: auto;
 }
 
 .test-slider img {
@@ -564,6 +673,48 @@
   max-height: 350px;
   bottom: 0;
   left: 0;
+}
+
+.test-slider .btn {
+  background: #999B30;
+  padding: 24px 20px;
+  -webkit-box-shadow: 0px 20px 50px rgba(153, 155, 48, 0.4);
+  box-shadow: 0px 20px 50px rgba(153, 155, 48, 0.4);
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: none;
+  font-family: Gotham Pro, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: absolute;
+  right: 190px;
+  bottom: -30px;
+  text-decoration: none;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.test-slider .btn:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 1160px) {
+  .test-slider .btn {
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .test-slider .btn {
+    right: 45px;
+  }
 }
 
 .dsns {
@@ -617,6 +768,16 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .dsns-content {
+    position: static;
+    padding: 0 16px;
+    max-width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
 .dsns .energy__title {
   display: -webkit-box;
   display: -webkit-flex;
@@ -650,6 +811,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .dsns h3 {
+    margin: 0 0 5px 0;
+  }
+}
+
 .instagram {
   text-align: center;
 }
@@ -668,11 +835,14 @@
   margin: 0 0 25px 0;
 }
 
+.news-slider {
+  margin: 0 0 200px 0;
+}
+
 .news-slider__title {
   font-style: normal;
   font-weight: 900;
   text-align: center;
-  margin: 0 0 60px 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -908,4 +1078,48 @@ button {
 
 .u {
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 500px) {
+  .energy__text.m {
+    margin: 0 16px 45px 16px;
+  }
+}
+
+.energy__text.m p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  display: none;
+}
+
+.energy__text.m p:first-child {
+  padding: 0 0 40px 0;
+}
+
+@media screen and (max-width: 1160px) {
+  .energy__text.m p:first-child {
+    padding: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .energy__text.m p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .energy__text.m p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .energy__text.m p {
+    display: block;
+  }
 }
