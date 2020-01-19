@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 		<title>Club4Paws</title>
+		<link rel="stylesheet" media="screen,projection" href="css/ui.totop.css" />
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/main.css"/>
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
@@ -22,8 +23,8 @@
 					</div>
 		  		<nav class="header-nav">
 					<a class="header-nav__item" href="#">МИ</a>
-					<a class="header-nav__item" href="#">Новини</a>
-					<a class="header-nav__item" href="#">де купити?</a>
+					<a class="header-nav__item" href="#news">Новини</a>
+					<a class="header-nav__item" id="open-button">де купити?</a>
 					<a class="header-nav__item" href="#">Чи підійде Scout моїй собаці?</a>
 				</nav>
 			</div>
@@ -206,7 +207,7 @@
 			</p>
 		</section>
 		<hr class="line">
-		<section class="news-slider">
+		<section class="news-slider" id="news">
 			<h2 class="news-slider__title">
 				Новини
 			</h2>
@@ -266,12 +267,83 @@
 			</div>
 		</section>
 		<section class="test">
-
+			<img src="img/mock_up_5kg.png" alt="" class="sm">
+			<img src="img/dog_mock_up_14kg.png" alt="" class="bg">
+			<h2 class="test__title">
+				Чи підійде СКАУТ <br>
+				моїй собаці?
+			</h2>
+			<a href="#" class="test__btn">
+				Розпочати тест
+			</a>
+			<a id="testbuy" class="test__buy">
+				Де купити?
+			</a>
 		</section>
 	</main>
-	<footer class="footer"></footer>
+
+	<div class="modal-overlay" id="modal-overlay">
+		
+	</div>
+	<div class="modal" id="modal" aria-hidden="true" aria-labelledby="modalTitle" aria-describedby="modalDescription" role="dialog">
+		<button class="close-button" id="close-button" title="Закрыть модальное окно">
+			<span></span>
+			<span></span>
+		</button>
+		<div class="modal-guts" role="document">
+			<div class="store">
+				<h2>
+					Будьте одним із перших! 
+					Придбайте новинку за акційною пропозицією 
+					в Інтернет-магазинах:
+				</h2>
+				<div class="store__item">
+					<a href="https://pethouse.ua/"><img src="img/pethouse.png" alt="">
+						pethouse.ua
+					</a>
+				</div>
+				<div class="store__item">
+					<a href="https://petslike.net/"><img src="img/petslike.png" alt="">
+						petslike.net
+					</a>
+				</div>
+				<div class="store__item">
+					<a href="https://rozetka.com.ua/"><img src="img/rozetka.png" alt="">
+						rozetka.com.ua
+					</a>
+				</div>
+				<div class="store__item">
+					<a href="https://shinshilka.ua/"><img src="img/sginshilka.png" alt="">
+						shinshilka.ua
+					</a>
+				</div>
+				<div class="store__item">
+					<a href="https://www.zooapteka.kiev.ua/"><img src="img/zoopteka.png" alt="">
+						zooapteka.kiev.ua
+					</a>
+				</div>
+				<div class="store__item">
+					<a href="https://uh.in.ua/"><img src="img/uh.png" alt="">
+						uh.in.ua
+					</a>
+				</div>
+				<div class="store__item">
+					<a href="https://www.zootovary.com/uk/"><img src="img/zootovary.png" alt="">
+						zootovary.com
+					</a>
+				</div>
+				<div class="store__item">
+					<a href="https://petexpert.com.ua/"><img src="img/Pet_Expert.png" alt="">
+						petexpert.com.ua
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 	<script src="owlcarousel/owl.carousel.min.js"></script>
+	<script src="js/easing.js" type="text/javascript"></script>
+	<script src="js/jquery.ui.totop.js" type="text/javascript"></script>
 	<script src="js/script.js"></script>
   	</body>
 </html>

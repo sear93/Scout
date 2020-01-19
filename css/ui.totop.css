@@ -1,0 +1,44 @@
+/*
+|--------------------------------------------------------------------------
+| UItoTop jQuery Plugin 1.2
+| http://www.mattvarone.com/web-design/uitotop-jquery-plugin/
+|--------------------------------------------------------------------------
+*/
+
+#toTop {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:20px;
+	right:30px;
+	overflow:hidden;
+	width:100px;
+	height:100px;
+	border:none;
+	text-indent:100%;
+	background: url(../img/Arrow.png) no-repeat left top
+}
+
+@media screen and ( max-width: 500px ) {
+	#toTop {
+		bottom:0px;
+		right:0px;
+		height: 80px;
+		width: 90px;
+	}
+}
+
+#toTopHover {
+	width:60px;
+	height:60px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}

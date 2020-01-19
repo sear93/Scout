@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $().UItoTop({ easingType: "easeOutQuart" });
+    
     $('.header__burger').click(function (event) {
         $('.header__burger,.header-nav').toggleClass('active');
         $('body').toggleClass('lock');
@@ -34,3 +36,25 @@ $(document).ready(function () {
      nav: true
    });
 });
+
+let modal = document.querySelector("#modal");
+let modalOverlay = document.querySelector("#modal-overlay");
+let closeButton = document.querySelector("#close-button");
+let openButton = document.querySelector("#open-button");
+let openButtonTest = document.querySelector("#testbuy");
+
+openButtonTest.addEventListener("click", function() {
+  modal.classList.toggle("on");
+  modalOverlay.classList.toggle("on");
+});
+
+openButton.addEventListener("click", function() {
+  modal.classList.toggle("on");
+  modalOverlay.classList.toggle("on");
+});
+
+closeButton.addEventListener("click", function() {
+  modal.classList.toggle("on");
+  modalOverlay.classList.toggle("on");
+});
+
