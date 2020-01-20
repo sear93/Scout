@@ -12,6 +12,7 @@ $(document).ready(function () {
      responsiveClass: true,
      autoplay: true,
      autoplayTimeout: 10000,
+     navText: ['<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>', '<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>'],
      responsive: {
        0: {
          items: 1,
@@ -37,24 +38,37 @@ $(document).ready(function () {
    });
 });
 
-let modal = document.querySelector("#modal");
+let modal1 = document.querySelector("#modal-1");
+let modal2 = document.querySelector("#modal-2");
 let modalOverlay = document.querySelector("#modal-overlay");
-let closeButton = document.querySelector("#close-button");
-let openButton = document.querySelector("#open-button");
+let closeButton1 = document.querySelector("#close-button-1");
+let closeButton2 = document.querySelector("#close-button-2");
+let openButton1 = document.querySelector("#open-button-1");
+let openButton2 = document.querySelector("#open-button-2");
 let openButtonTest = document.querySelector("#testbuy");
 
 openButtonTest.addEventListener("click", function() {
-  modal.classList.toggle("on");
+  modal1.classList.toggle("on");
   modalOverlay.classList.toggle("on");
 });
 
-openButton.addEventListener("click", function() {
-  modal.classList.toggle("on");
+openButton1.addEventListener("click", function() {
+  modal1.classList.toggle("on");
   modalOverlay.classList.toggle("on");
 });
 
-closeButton.addEventListener("click", function() {
-  modal.classList.toggle("on");
+openButton2.addEventListener("click", function() {
+  modal2.classList.toggle("on");
+  modalOverlay.classList.toggle("on");
+});
+
+closeButton1.addEventListener("click", function() {
+  modal1.classList.toggle("on");
+  modalOverlay.classList.toggle("on");
+});
+
+closeButton2.addEventListener("click", function() {
+  modal2.classList.toggle("on");
   modalOverlay.classList.toggle("on");
 });
 
