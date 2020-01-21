@@ -11,6 +11,7 @@ $(document).ready(function () {
      margin: 20,
      responsiveClass: true,
      autoplay: true,
+     dots: false,
      autoplayTimeout: 10000,
      navText: ['<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>', '<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>'],
      responsive: {
@@ -32,8 +33,13 @@ $(document).ready(function () {
    $(".slider").owlCarousel({
      loop: true,
      autoplay: true,
+     dotsContainer: ".dots",
      autoplayTimeout: 10000,
      items: 1,
+     navText: [
+       '<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>',
+       '<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>'
+     ],
      nav: true
    });
 });
