@@ -1244,7 +1244,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  letter-spacing: -2px;
   margin: 0;
 }
 
@@ -1266,10 +1265,15 @@
   }
 }
 
+.dsns h2 {
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
 .dsns h3 {
   font-style: normal;
   font-weight: bold;
-  margin: 0 0 22px 0;
+  margin: 12px 0 25px 0;
 }
 
 @media screen and (max-width: 860px) {
