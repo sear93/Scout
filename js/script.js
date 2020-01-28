@@ -6,6 +6,18 @@ $(document).ready(function () {
         $('body').toggleClass('lock');
     });
 
+      $("a[href^='#']").click(function() {
+        var elementClick = $(this).attr("href");
+        var destination = $(elementClick).offset().top;
+        jQuery("html:not(:animated),body:not(:animated)").animate(
+          {
+            scrollTop: destination
+          },
+          1200
+        );
+        return false;
+      });
+
    $(".news-container").owlCarousel({
      loop: false,
      margin: 20,
