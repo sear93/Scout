@@ -44,9 +44,9 @@ $(document).ready(function () {
 
    $(".slider").owlCarousel({
      loop: true,
-     autoplay: true,
+     autoplay: false,
      dotsContainer: ".dots",
-     autoplayTimeout: 10000,
+
      items: 1,
      navText: [
        '<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>',
@@ -55,6 +55,7 @@ $(document).ready(function () {
      nav: true
    });
 });
+
 
 let modal1 = document.querySelector("#modal-1");
 let modal2 = document.querySelector("#modal-2");
@@ -95,9 +96,18 @@ let clear = document.querySelector("#close_after_news");
 let closeBtn = document.querySelector(".header__burger");
 let closeMenu = document.querySelector(".header-nav");
 let lock = document.querySelector("body");
+let overlay = document.querySelector(".modal-overlay");
 
-clear.addEventListener("click", function () {
-  closeMenu.classList.remove("active");
-  closeBtn.classList.remove("active");
-  lock.classList.remove("lock");
-})
+// clear.addEventListener("click", function () {
+//   closeMenu.classList.remove("active");
+//   closeBtn.classList.remove("active");
+//   lock.classList.remove("lock");
+// })
+
+overlay.addEventListener("click", function () {
+  overlay.classList.remove("on");
+  closeButton1.classList.remove("on");
+  closeButton2.classList.remove("on");
+  modal1.classList.remove("on");
+  modal2.classList.remove("on");
+});

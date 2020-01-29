@@ -814,9 +814,12 @@
 .test-slider .container .consist__link {
   font-weight: 900;
   font-size: 20px;
+  position: relative;
+  z-index: 2;
   line-height: 30px;
   border-bottom: 1px solid #000000;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1260px) {
