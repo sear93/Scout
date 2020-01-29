@@ -1662,7 +1662,7 @@
 .store__item {
   border: 1px solid #D1D1D1;
   width: 33.33%;
-  height: 160px;
+  min-height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2281,7 +2281,8 @@ button {
 .modal-buy {
   position: fixed;
   overflow: hidden;
-  bottom: 10%;
+  bottom: 2%;
+  top: 2%;
 }
 
 @media screen and (max-width: 500px) {

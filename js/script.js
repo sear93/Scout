@@ -97,7 +97,7 @@ let closeMenu = document.querySelector(".header-nav");
 let lock = document.querySelector("body");
 
 clear.addEventListener("click", function () {
-  closeMenu.classList.toggle("active");
-  closeBtn.classList.toggle("active");
-  lock.classList.toggle("lock");
+  closeMenu.classList.remove("active");
+  closeBtn.classList.remove("active");
+  lock.classList.remove("lock");
 })
