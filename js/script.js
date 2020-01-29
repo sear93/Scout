@@ -90,3 +90,14 @@ closeButton2.addEventListener("click", function() {
   modalOverlay.classList.toggle("on");
 });
 
+
+let clear = document.querySelector("#close_after_news");
+let closeBtn = document.querySelector(".header__burger");
+let closeMenu = document.querySelector(".header-nav");
+let lock = document.querySelector("body");
+
+clear.addEventListener("click", function () {
+  closeMenu.classList.toggle("active");
+  closeBtn.classList.toggle("active");
+  lock.classList.toggle("lock");
+})
