@@ -18,43 +18,44 @@ $(document).ready(function () {
         return false;
       });
 
-   $(".news-container").owlCarousel({
-     loop: false,
-     margin: 20,
-     responsiveClass: true,
-     autoplay: true,
-     dots: false,
-     autoplayTimeout: 10000,
-     navText: ['<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>', '<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>'],
-     responsive: {
-       0: {
-         items: 1,
-         nav: true
-       },
-       500: {
-         items: 2,
-         nav: true
-       },
-       820: {
-         items: 3,
-         nav: true
-       }
-     }
-   });
+  //  $(".news-container").owlCarousel({
+  //    loop: false,
+  //    margin: 20,
+  //    responsiveClass: true,
+  //    autoplay: true,
+  //    dots: false,
+  //    autoplayTimeout: 10000,
+  //    navText: ['<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>', '<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>'],
+  //    responsive: {
+  //      0: {
+  //        items: 1,
+  //        nav: true
+  //      },
+  //      500: {
+  //        items: 2,
+  //        nav: true
+  //      },
+  //      820: {
+  //        items: 3,
+  //        nav: true
+  //      }
+  //    }
+  //  });
 
    $(".slider").owlCarousel({
      loop: true,
      autoplay: false,
      dotsContainer: ".dots",
-
      items: 1,
      navText: [
        '<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>',
        '<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>'
      ],
-     nav: true
+     nav: true,
+     
    });
 });
+
 
 
 let modal1 = document.querySelector("#modal-1");
