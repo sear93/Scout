@@ -2431,3 +2431,9 @@ button {
     width: 20px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .video-container {
+    margin: 0 0 40px 0;
+  }
+}
